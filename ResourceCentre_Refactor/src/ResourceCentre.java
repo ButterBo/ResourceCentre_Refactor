@@ -39,7 +39,7 @@ public class ResourceCentre {
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
-
+//
 			if (option == OPTION_VIEW) {
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
