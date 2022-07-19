@@ -3,10 +3,32 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 
+<<<<<<< HEAD
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
 	private static final int OPTION_VIEW = 1;
+=======
+	/**
+	 * 
+	 */
+	private static final int OPTION_RETURN = 4;
+	/**
+	 * 
+	 */
+	private static final int OPTION_LOAN = 3;
+	/**
+	 * 
+	 */
+	private static final int OPTION_ADD = 2;
+	/**
+	 * 
+	 */
+	private static final int OPTION_VIEW = 1;
+	/**
+	 * 
+	 */
+>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 	private static final int OPTION_QUIT = 5;
 	public static void main(String[] args) {
 
@@ -24,7 +46,11 @@ public class ResourceCentre {
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
+<<<<<<< HEAD
 
+=======
+//
+>>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 			if (option == OPTION_VIEW) {
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
