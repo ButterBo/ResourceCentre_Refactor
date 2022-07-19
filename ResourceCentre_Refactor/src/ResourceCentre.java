@@ -2,34 +2,10 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
-
-<<<<<<< HEAD
-
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
 	private static final int OPTION_VIEW = 1;
-=======
-	/**
-	 * 
-	 */
-	private static final int OPTION_RETURN = 4;
-	/**
-	 * 
-	 */
-	private static final int OPTION_LOAN = 3;
-	/**
-	 * 
-	 */
-	private static final int OPTION_ADD = 2;
-	/**
-	 * 
-	 */
-	private static final int OPTION_VIEW = 1;
-	/**
-	 * 
-	 */
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 	private static final int OPTION_QUIT = 5;
 	public static void main(String[] args) {
 
@@ -46,12 +22,8 @@ public class ResourceCentre {
 		while (option != OPTION_QUIT) {
 
 			ResourceCentre.menu();
-<<<<<<< HEAD
 			option = Helper.readInt("Enter an option > ");
-=======
 			option = Helper.readInt("Enter an option > ");
-//
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 			if (option == OPTION_VIEW) {
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
@@ -163,7 +135,7 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			output += String.format("%-84s \n", camcorderList.get(i).toString());
+			output += String.format("%-84s\n", camcorderList.get(i).toString());
 		}
 		return output;
 	}
@@ -180,7 +152,7 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-84s \n", chromebookList.get(i).toString());
+			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}
