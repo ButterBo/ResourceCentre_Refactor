@@ -3,26 +3,12 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 
-	/**
-	 * 
-	 */
 	private static final int OPTION_RETURN = 4;
-	/**
-	 * 
-	 */
 	private static final int OPTION_LOAN = 3;
-	/**
-	 * 
-	 */
 	private static final int OPTION_ADD = 2;
-	/**
-	 * 
-	 */
 	private static final int OPTION_VIEW = 1;
-	/**
-	 * 
-	 */
 	private static final int OPTION_QUIT = 5;
+	
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
@@ -101,7 +87,7 @@ public class ResourceCentre {
 					System.out.println("Invalid type");
 				}
 
-			} else if (option == 5) {
+			} else if (option == OPTION_QUIT) {
 				System.out.println("Bye!");
 			} else {
 				System.out.println("Invalid option");
@@ -111,9 +97,6 @@ public class ResourceCentre {
 
 	}
 
-	/**
-	 * 
-	 */
 	public static void itemTypeMenu() {
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
@@ -155,9 +138,11 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 
 			output += String.format("%-84s\n", camcorderList.get(i).toString());
+
 		}
 		return output;
 	}
+	
 	public static void viewAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.setHeader("CAMCORDER LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
@@ -170,11 +155,13 @@ public class ResourceCentre {
 		String output = "";
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
-
 			output += String.format("%-84s\n", chromebookList.get(i).toString());
+
+
 		}
 		return output;
 	}
+	
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
@@ -313,6 +300,7 @@ public class ResourceCentre {
 			System.out.println("Camcorder " + tag + " returned");
 		}
 	}
+	
 	// write your doReturnChromebook code here
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag) {
 		boolean isReturned = false;
@@ -327,9 +315,9 @@ public class ResourceCentre {
 				
 			}
 		}
-		return isReturned;
-		
+		return isReturned;	
 	}
+	
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
 		ResourceCentre.viewAllChromebook(chromebookList);

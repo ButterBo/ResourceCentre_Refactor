@@ -1,4 +1,3 @@
-
 public class Item {
 	private String assetTag;
 	private String description;
@@ -22,16 +21,19 @@ public class Item {
 		
 		return itemInfo;
 	}
+	
 	public String showAvailability(boolean isAvailable) {
 		String avail;
-
+		
 		if (isAvailable == true) {
 			avail = "Yes";
+			
 		} else {
 			avail = "No";
 		}
 		return avail;
 	}
+
 	public String getAssetTag() {
 		return assetTag;
 	}
@@ -56,4 +58,3 @@ public class Item {
 		this.isAvailable = isAvailable;
 	}
 }
-
