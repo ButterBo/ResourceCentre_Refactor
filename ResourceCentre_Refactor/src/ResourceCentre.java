@@ -3,32 +3,11 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 
-<<<<<<< HEAD
+
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
 	private static final int OPTION_VIEW = 1;
-=======
-	/**
-	 * 
-	 */
-	private static final int OPTION_RETURN = 4;
-	/**
-	 * 
-	 */
-	private static final int OPTION_LOAN = 3;
-	/**
-	 * 
-	 */
-	private static final int OPTION_ADD = 2;
-	/**
-	 * 
-	 */
-	private static final int OPTION_VIEW = 1;
-	/**
-	 * 
-	 */
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 	private static final int OPTION_QUIT = 5;
 	public static void main(String[] args) {
 
@@ -46,11 +25,6 @@ public class ResourceCentre {
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
-<<<<<<< HEAD
-
-=======
-//
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 			if (option == OPTION_VIEW) {
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
@@ -165,10 +139,7 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", camcorderList.get(i).getAssetTag(),
-					camcorderList.get(i).getDescription(), 
-					ResourceCentre.showAvailability(camcorderList.get(i).getIsAvailable()),
-					camcorderList.get(i).getDueDate(),camcorderList.get(i).getOpticalZoom());
+			output += String.format("%-84s \n", camcorderList.get(i).toString());
 		}
 		return output;
 	}
@@ -185,10 +156,7 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
-					chromebookList.get(i).getDescription(), 
-					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
-					chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs());
+			output += String.format("%-84s \n", chromebookList.get(i).toString());
 		}
 		return output;
 	}
