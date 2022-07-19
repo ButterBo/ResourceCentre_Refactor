@@ -19,7 +19,7 @@ public class Item {
 				getDescription(),
 				showAvailability(getIsAvailable()),
 				getDueDate());
-	}
+	} // yeah
 	public String getAssetTag() {
 		return assetTag;
 	}

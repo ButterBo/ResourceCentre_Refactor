@@ -127,7 +127,7 @@ public class ResourceCentre {
 			avail = "No";
 		}
 		return avail;
-	}
+	}//yeah
 
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
