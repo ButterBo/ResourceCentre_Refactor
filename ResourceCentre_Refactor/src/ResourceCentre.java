@@ -1,10 +1,7 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
@@ -28,7 +25,7 @@ public class ResourceCentre {
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
-			option = Helper.readInt("Enter an option > ");
+
 			if (option == OPTION_VIEW) {
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
@@ -132,7 +129,7 @@ public class ResourceCentre {
 			avail = "No";
 		}
 		return avail;
-	}//yeah
+	}
 
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
@@ -277,11 +274,7 @@ public class ResourceCentre {
 		boolean isReturned = false;
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-<<<<<<< HEAD
 			String assetTag = camcorderList.get(i).getAssetTag();
-=======
-			String assetTag = camcorderList.get(i).getAssetTag();          //extracted
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 			if (tag.equalsIgnoreCase(assetTag)
 					&& camcorderList.get(i).getIsAvailable() == false) {
 				camcorderList.get(i).setIsAvailable(true);
@@ -311,11 +304,7 @@ public class ResourceCentre {
 		boolean isReturned = false;
 
 		for (int i = 0; i < chromebookList.size(); i++) {
-<<<<<<< HEAD
 			String assetTag = chromebookList.get(i).getAssetTag();
-=======
-			String assetTag = chromebookList.get(i).getAssetTag();           //extracted
->>>>>>> branch 'master' of https://github.com/ButterBo/ResourceCentre_Refactor.git
 			if (tag.equalsIgnoreCase(assetTag)
 					&& chromebookList.get(i).getIsAvailable() == false) {
 				chromebookList.get(i).setIsAvailable(true);
